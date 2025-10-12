@@ -20,6 +20,8 @@ const AboutPage = () => {
         </CardHeader>
         <CardContent>
           <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-secondary rounded-md">Python</span>
+            <span className="px-3 py-1 bg-secondary rounded-md">Node.js</span>
             <span className="px-3 py-1 bg-secondary rounded-md">Next.js 14</span>
             <span className="px-3 py-1 bg-secondary rounded-md">TypeScript</span>
             <span className="px-3 py-1 bg-secondary rounded-md">Tailwind CSS</span>
