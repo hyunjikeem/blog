@@ -14,7 +14,7 @@ export default function Header() {
             <div className='container mx-auto flex h-full items-center justify-between'>
                 {/* { left logo div} */}
                 <div className='flex items-center space-x-8'>
-                    <Link href='/' className='text-2xl font-bold'>
+                    <Link href='/' className='text-2xl font-bold' style={{ fontFamily: 'var(--font-poppins)'}}>
                         LocalKeem
                     </Link>
                     {/*  Desktop Link */}
