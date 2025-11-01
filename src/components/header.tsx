@@ -4,10 +4,17 @@ import Link from 'next/link';
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { MenuIcon } from 'lucide-react';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const closeMenu = () => setIsMenuOpen(false); // 모바일 메뉴 닫기
+    
+    const pathname = usePathname();
+    const isActive = (path: string) => {
+        if (pathname === '/' && path === '/posts') return true;
+        return pathname === path;
+    }
 
     return (
         <header className='fixed top-0 z-50 h-16 w-screen border-b px-6 backdrop-blur-md'>
@@ -25,9 +32,9 @@ export default function Header() {
                     
                     {/*  Desktop Link */}
                     <nav className='hidden items-center space-x-8 md:flex'>
-                        <Link href='/posts' className='transition-colors hover:text-blue-500'>Posts</Link>
-                        <Link href='/notes' className='transition-colors hover:text-blue-500'>Notes</Link>
-                        <Link href='/about' className='transition-colors hover:text-blue-500'>About</Link>
+                        <Link href='/posts' className={`transition-colors hover:text-blue-500 ${isActive('/posts') ? 'text-blue-500' :  ''}`}>Posts</Link>
+                        <Link href='/notes' className={`transition-colors hover:text-blue-500 ${isActive('/notes') ? 'text-blue-500' :  ''}`}>Notes</Link>
+                        <Link href='/about' className={`transition-colors hover:text-blue-500 ${isActive('/about') ? 'text-blue-500' :  ''}`}>About</Link>
                     </nav>
 
                     {/* Theme change button */}
