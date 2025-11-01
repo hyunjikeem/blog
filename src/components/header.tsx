@@ -15,17 +15,20 @@ export default function Header() {
                 {/* { left logo div} */}
                 <div className='flex items-center space-x-8'>
                     <Link href='/' className='text-2xl font-bold' style={{ fontFamily: 'var(--font-poppins)'}}>
-                        LocalKeem
+                        localkeem
                     </Link>
-                    {/*  Desktop Link */}
-                    <nav className='hidden items-center space-x-8 md:flex'>
-                        <Link href='/posts' className='transition-colors hover:text-blue-500'>Posts</Link>
-                        <Link href='/about' className='transition-colors hover:text-blue-500'>About</Link>
-                    </nav>
+                    
                 </div>
                 
                 {/* right button group div */}
-                <div className='flex items-center gap-3'>
+                <div className='flex items-center gap-3 md:gap-6'>
+                    
+                    {/*  Desktop Link */}
+                    <nav className='hidden items-center space-x-8 md:flex'>
+                        <Link href='/posts' className='transition-colors hover:text-blue-500'>Posts</Link>
+                        <Link href='/notes' className='transition-colors hover:text-blue-500'>Notes</Link>
+                        <Link href='/about' className='transition-colors hover:text-blue-500'>About</Link>
+                    </nav>
 
                     {/* Theme change button */}
                     <ThemeToggleButton />
