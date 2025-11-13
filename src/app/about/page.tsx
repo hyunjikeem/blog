@@ -21,12 +21,14 @@ const AboutPage = () => {
         <CardContent>
           <div className="flex flex-wrap gap-2">
             <span className="px-3 py-1 bg-secondary rounded-md">Python</span>
+            <span className="px-3 py-1 bg-secondary rounded-md">FastAPI</span>
+            <span className="px-3 py-1 bg-secondary rounded-md">Flask</span>
+            <span className="px-3 py-1 bg-secondary rounded-md">JavaScript</span>
             <span className="px-3 py-1 bg-secondary rounded-md">Node.js</span>
-            <span className="px-3 py-1 bg-secondary rounded-md">Next.js 14</span>
-            <span className="px-3 py-1 bg-secondary rounded-md">TypeScript</span>
-            <span className="px-3 py-1 bg-secondary rounded-md">Tailwind CSS</span>
-            <span className="px-3 py-1 bg-secondary rounded-md">MDX</span>
-            <span className="px-3 py-1 bg-secondary rounded-md">React</span>
+            <span className="px-3 py-1 bg-secondary rounded-md">Express.js</span>
+            <span className="px-3 py-1 bg-secondary rounded-md">MySQL</span>
+            <span className="px-3 py-1 bg-secondary rounded-md">MariaDB</span>
+            <span className="px-3 py-1 bg-secondary rounded-md">MongoDB</span>
           </div>
         </CardContent>
       </Card>
