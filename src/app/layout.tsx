@@ -33,7 +33,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Dev Local Keem",
+  title: "Dev localkeem",
   description: "Local Keem's dev blog",
 };
 
