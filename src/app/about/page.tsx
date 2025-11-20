@@ -40,9 +40,9 @@ const AboutPage = () => {
         <CardContent>
           <p className="text-muted-foreground mb-2">문의사항이나 제안사항이 있으시면 언제든 연락 주세요.</p>
           <div className="space-y-1">
-            <p>📧 Email: hyunji.kim818@gmail.com</p>
-            <p>💻 GitHub: github.com/localkeem</p>
-            <p>🔗 LinkedIn: linkedin.com/in/localkeem</p>
+            <p>📧 Email: <a href="mailto:hyunji.kim818@gmail.com" className="hover:text-blue-500">hyunji.kim818@gmail.com</a></p>
+            <p>💻 GitHub: <a href="https://github.com/hyunjikeem" className="hover:text-blue-500" target="_blank" rel="noopener noreferrer">https://github.com/hyunjikeem</a></p>
+            <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/hyunji-kim818/" className="hover:text-blue-500" target="_blank" rel="noopener noreferrer">linkedin.com/hyunjikim</a></p>
           </div>
         </CardContent>
       </Card>
