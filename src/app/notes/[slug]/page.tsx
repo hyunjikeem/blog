@@ -9,6 +9,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkFlexibleToc, { type TocItem } from 'remark-flexible-toc';
 import { TableOfContents } from '@/features/posts/components/table-of-contents';
+import Giscus from '@/components/Giscus';
 
 type Scope = {
     toc?: TocItem[];
@@ -51,6 +52,7 @@ const NotePage = async ({ params }:  { params: Promise<{ slug: string }> }) => {
                 <div className='prose dark:prose-invert max-w-none overflow-x-auto flex-1 border-x p-6'>
                     <PostHeader frontmatter={frontmatter} />
                     {content}
+                    <Giscus />
                 </div>
                 <aside className='z-40 hidden w-56 flex-shrnk-0 lg:block'>
                     <div className='fixed top-16 w-56 h-full overflow-auto p-3'>{scope?.toc && <TableOfContents toc={scope.toc} />}</div>
